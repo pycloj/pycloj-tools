@@ -1,8 +1,10 @@
 (ns pycloj-tools.browser-test
-  (:require [pycloj-tools.browser :refer :all]
-            [pycloj-tools.pyutils :as pyutils]
-            [notespace.note :refer [note note-md note-test render-this-ns!]]
-            [libpython-clj.python :as py]))
+  (:require [notespace.note :refer [note note-void note-md note-test render-this-ns!]]))
+
+(note-void
+ (require '[pycloj-tools.browser :refer :all]
+         '[pycloj-tools.pyutils :as pyutils]
+         '[libpython-clj.python :as py]))
 
 (note-test
  :name-module-test

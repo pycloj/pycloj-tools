@@ -1,8 +1,10 @@
 (ns pycloj-tools.visual-test
-  (:require [pycloj-tools.visual :refer :all]
-            [pycloj-tools.pyutils :as pyutils]
-            [notespace.note :refer [note note-as-hiccup note-test render-this-ns!]]
-            [libpython-clj.python :as py]))
+  (:require [notespace.note :refer [note note-void note-as-hiccup note-test render-this-ns!]]))
+
+(note-void
+ (require '[pycloj-tools.visual :refer :all]
+          '[pycloj-tools.pyutils :as pyutils]
+          '[libpython-clj.python :as py]))
 
 (note-as-hiccup :matplotlib
  (matplotlib->svg
