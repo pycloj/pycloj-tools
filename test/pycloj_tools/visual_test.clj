@@ -1,5 +1,5 @@
 (ns pycloj-tools.visual-test
-  (:require [notespace.note :refer [note note-void note-as-hiccup note-test render-this-ns!]]))
+  (:require [notespace.v0.note :refer [note note-void note-as-hiccup note-test render-this-ns!]]))
 
 (note-void
  (require '[pycloj-tools.visual :refer :all]

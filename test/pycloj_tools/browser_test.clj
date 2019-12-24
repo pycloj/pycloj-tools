@@ -1,5 +1,5 @@
 (ns pycloj-tools.browser-test
-  (:require [notespace.note :refer [note note-void note-md note-test render-this-ns!]]))
+  (:require [notespace.v0.note :refer [note note-void note-md note-test render-this-ns!]]))
 
 (note-void
  (require '[pycloj-tools.browser :refer :all]
