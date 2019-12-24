@@ -99,27 +99,49 @@ We will test it with realistic python packages such as `pandas`, as well as with
  [[=
    (->> "dummy_package.module_a.submodule_aa"
         name->module
-        module->functions-map
+        ->functions-map
         keys
         set)
    #{:f}]
   [=
    (->> "dummy_package"
         name->module
-        module->functions-map
+        ->functions-map
         keys
         set)
    #{:for_iter
      :calling_custom_clojure_fn
-     :complex_fn}]])
+     :complex_fn}]
+  [=
+   (->> "dummy_package"
+        name->module
+        ->classes-map
+        :WithObjClass
+        ->functions-map
+        keys
+        set)
+   #{:__init__
+     :__enter__
+     :doit_noerr
+     :doit_err
+     :__exit__}]])
 
+(note-test
+ :classes-map-test
+ [[=
+   (->> "dummy_package"
+        name->module
+        ->classes-map
+        keys
+        set)
+   #{:WithObjClass}]])
 
 (note-test
  :function-info-test
  [[=
    (->> "dummy_package"
         name->module
-        module->functions-map
+        ->functions-map
         :complex_fn
         function->info)
    {:name              "complex_fn",

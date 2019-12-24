@@ -58,25 +58,27 @@
   (when-not (operator/eq inspect/_empty v)
     v))
 
-(defn module->functions-map [module]
-  (->> module
-       inspect/getmembers
-       (filter (fn [[k v]]
-                 (inspect/isfunction v)))
+(defn members->map [members]
+  (->> members
        (map (fn [[k v]]
               [(keyword k) v]))
        (into {})))
 
-
-(defn module->classes-map [module]
-  (->> module
+(defn ->members-map
+  ([object]
+   (-> object
        inspect/getmembers
-       (filter (fn [[k v]]
-                 (inspect/isclass v)))
-       (map (fn [[k v]]
-              [(keyword k) v]))
-       (into {})))
+       members->map))
+  ([object inspect-predicate]
+   (-> object
+       (inspect/getmembers inspect-predicate)
+       members->map)))
 
+(defn ->functions-map [object]
+  (->members-map object inspect/isfunction))
+
+(defn ->classes-map [object]
+  (->members-map object inspect/isclass))
 
 (defn protect-doctstring [dstr]
   (if (string? dstr)

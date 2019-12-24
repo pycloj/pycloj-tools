@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><body style="background-color:#dddddd;"><head><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-clj.js" type="text/javascript"></script></head><div><h1>pycloj-tools.visual-test</h1><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 00:29:10 IST 2019.</small></i><hr /><div>Table of contents<ul><li><a href="#matplotlib">matplotlib</a></li></ul></div><hr /><p><p><div style="background-color:#f2f2f2; width: 100%"><div><code class="prettyprint lang-clj">(require&nbsp;(quote&nbsp;[pycloj-tools.visual</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:refer&nbsp;:all])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[pycloj-tools.pyutils</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;pyutils])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[libpython-clj.python</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;py]))</br></br></code></div></div></p></p><p><p><div style="background-color:#f2f2f2; width: 100%"><a id="matplotlib">~~~~matplotlib~~~~</a><div><code class="prettyprint lang-clj">(matplotlib->svg</br>&nbsp;&nbsp;(fn&nbsp;[]</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/plot</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(->>&nbsp;(repeatedly&nbsp;99&nbsp;rand)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(map&nbsp;(partial&nbsp;+&nbsp;-0.5))</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reductions&nbsp;+)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec))</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/ylabel&nbsp;"some&nbsp;numbers")))</br></br></code></div></div></p><?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html><body style="background-color:#dddddd;"><head><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-clj.js" type="text/javascript"></script></head><div><h1>pycloj-tools.visual-test</h1><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 01:00:55 IST 2019.</small></i><hr /><div>Table of contents<ul><li><a href="#matplotlib">matplotlib</a></li></ul></div><hr /><p><p><div style="background-color:#f2f2f2; width: 100%"><div><code class="prettyprint lang-clj">(require&nbsp;(quote&nbsp;[pycloj-tools.visual</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:refer&nbsp;:all])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[pycloj-tools.pyutils</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;pyutils])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[libpython-clj.python</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;py]))</br></br></code></div></div></p></p><p><p><div style="background-color:#f2f2f2; width: 100%"><a id="matplotlib">~~~~matplotlib~~~~</a><div><code class="prettyprint lang-clj">(matplotlib->svg</br>&nbsp;&nbsp;(fn&nbsp;[]</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/plot</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(->>&nbsp;(repeatedly&nbsp;99&nbsp;rand)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(map&nbsp;(partial&nbsp;+&nbsp;-0.5))</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reductions&nbsp;+)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec))</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/ylabel&nbsp;"some&nbsp;numbers")))</br></br></code></div></div></p><?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with matplotlib (https://matplotlib.org/) -->
@@ -33,10 +33,10 @@ z
       <defs>
        <path d="M 0 0 
 L 0 3.5 
-" id="mb4f478b5c9" style="stroke:#000000;stroke-width:0.8;"/>
+" id="me036a4f8b8" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.832727" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.832727" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_1">
@@ -72,7 +72,7 @@ z
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="140.088757" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="140.088757" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_2">
@@ -112,7 +112,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="206.344787" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="206.344787" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_3">
@@ -145,7 +145,7 @@ z
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="272.600816" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="272.600816" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_4">
@@ -191,7 +191,7 @@ z
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="338.856846" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="338.856846" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_5">
@@ -246,7 +246,7 @@ z
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="405.112876" xlink:href="#mb4f478b5c9" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="405.112876" xlink:href="#me036a4f8b8" y="307.584"/>
       </g>
      </g>
      <g id="text_6">
@@ -280,14 +280,14 @@ z
       <defs>
        <path d="M 0 0 
 L -3.5 0 
-" id="m984a3c4f0e" style="stroke:#000000;stroke-width:0.8;"/>
+" id="m9b2d37dc4c" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="293.183387"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m9b2d37dc4c" y="278.80694"/>
       </g>
      </g>
      <g id="text_7">
-      <!-- −3 -->
+      <!-- −1 -->
       <defs>
        <path d="M 10.59375 35.5 
 L 73.1875 35.5 
@@ -295,6 +295,61 @@ L 73.1875 27.203125
 L 10.59375 27.203125 
 z
 " id="DejaVuSans-8722"/>
+      </defs>
+      <g transform="translate(35.857813 282.606159)scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-8722"/>
+       <use x="83.789062" xlink:href="#DejaVuSans-49"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_2">
+     <g id="line2d_8">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m9b2d37dc4c" y="227.126889"/>
+      </g>
+     </g>
+     <g id="text_8">
+      <!-- 0 -->
+      <g transform="translate(44.2375 230.926108)scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-48"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_3">
+     <g id="line2d_9">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m9b2d37dc4c" y="175.446839"/>
+      </g>
+     </g>
+     <g id="text_9">
+      <!-- 1 -->
+      <g transform="translate(44.2375 179.246058)scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-49"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_4">
+     <g id="line2d_10">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m9b2d37dc4c" y="123.766788"/>
+      </g>
+     </g>
+     <g id="text_10">
+      <!-- 2 -->
+      <g transform="translate(44.2375 127.566007)scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-50"/>
+      </g>
+     </g>
+    </g>
+    <g id="ytick_5">
+     <g id="line2d_11">
+      <g>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m9b2d37dc4c" y="72.086738"/>
+      </g>
+     </g>
+     <g id="text_11">
+      <!-- 3 -->
+      <defs>
        <path d="M 40.578125 39.3125 
 Q 47.65625 37.796875 51.625 33 
 Q 55.609375 28.21875 55.609375 21.1875 
@@ -328,63 +383,8 @@ Q 46.96875 40.921875 40.578125 39.3125
 z
 " id="DejaVuSans-51"/>
       </defs>
-      <g transform="translate(35.857813 296.982606)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-51"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_2">
-     <g id="line2d_8">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="239.94467"/>
-      </g>
-     </g>
-     <g id="text_8">
-      <!-- −2 -->
-      <g transform="translate(35.857813 243.743889)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-50"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_3">
-     <g id="line2d_9">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="186.705954"/>
-      </g>
-     </g>
-     <g id="text_9">
-      <!-- −1 -->
-      <g transform="translate(35.857813 190.505172)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-49"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_4">
-     <g id="line2d_10">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="133.467237"/>
-      </g>
-     </g>
-     <g id="text_10">
-      <!-- 0 -->
-      <g transform="translate(44.2375 137.266456)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-48"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_5">
-     <g id="line2d_11">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="80.22852"/>
-      </g>
-     </g>
-     <g id="text_11">
-      <!-- 1 -->
-      <g transform="translate(44.2375 84.027739)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-49"/>
+      <g transform="translate(44.2375 75.885957)scale(0.1 -0.1)">
+       <use xlink:href="#DejaVuSans-51"/>
       </g>
      </g>
     </g>
@@ -597,105 +597,105 @@ z
     </g>
    </g>
    <g id="line2d_12">
-    <path clip-path="url(#p7ecdf2768d)" d="M 73.832727 141.701579 
-L 77.145529 138.776437 
-L 80.45833 123.04708 
-L 83.771132 108.031497 
-L 87.083933 81.51871 
-L 90.396735 77.686613 
-L 93.709536 71.248451 
-L 97.022338 82.361059 
-L 100.335139 75.701607 
-L 103.647941 70.961006 
-L 106.960742 79.453693 
-L 110.273544 68.874606 
-L 113.586345 53.568 
-L 116.899147 68.326199 
-L 120.211948 83.32857 
-L 123.52475 84.206151 
-L 126.837551 95.65012 
-L 130.150353 117.444801 
-L 133.463154 112.117988 
-L 136.775955 93.040245 
-L 140.088757 77.902771 
-L 143.401558 85.877239 
-L 146.71436 102.36178 
-L 150.027161 90.30339 
-L 153.339963 115.713476 
-L 156.652764 95.722373 
-L 159.965566 95.4403 
-L 163.278367 121.19052 
-L 166.591169 125.547819 
-L 169.90397 118.414317 
-L 173.216772 100.951585 
-L 176.529573 119.916775 
-L 179.842375 136.218696 
-L 183.155176 133.350887 
-L 186.467978 134.849376 
-L 189.780779 139.869601 
-L 193.093581 163.281184 
-L 196.406382 147.349934 
-L 199.719184 131.610014 
-L 203.031985 128.16531 
-L 206.344787 150.013512 
-L 209.657588 128.287408 
-L 212.97039 143.785131 
-L 216.283191 130.465539 
-L 219.595993 121.832344 
-L 222.908794 111.732729 
-L 226.221596 119.442452 
-L 229.534397 142.265712 
-L 232.847199 154.507345 
-L 236.16 174.353003 
-L 239.472801 160.073332 
-L 242.785603 185.959405 
-L 246.098404 184.782839 
-L 249.411206 169.575998 
-L 252.724007 166.491087 
-L 256.036809 151.80558 
-L 259.34961 130.031498 
-L 262.662412 136.066266 
-L 265.975213 157.211193 
-L 269.288015 173.832157 
-L 272.600816 159.927222 
-L 275.913618 171.65962 
-L 279.226419 182.317682 
-L 282.539221 168.740574 
-L 285.852022 176.235122 
-L 289.164824 175.65788 
-L 292.477625 167.419449 
-L 295.790427 158.571649 
-L 299.103228 167.014812 
-L 302.41603 189.714223 
-L 305.728831 195.891395 
-L 309.041633 205.661431 
-L 312.354434 211.29877 
-L 315.667236 200.226595 
-L 318.980037 187.375165 
-L 322.292839 213.480733 
-L 325.60564 202.431632 
-L 328.918442 212.522549 
-L 332.231243 186.654292 
-L 335.544045 212.02592 
-L 338.856846 194.316074 
-L 342.169647 188.236956 
-L 345.482449 174.385636 
-L 348.79525 193.036821 
-L 352.108052 199.170322 
-L 355.420853 209.654796 
-L 358.733655 227.496299 
-L 362.046456 245.961295 
-L 365.359258 245.678537 
-L 368.672059 265.049892 
-L 371.984861 266.074133 
-L 375.297662 274.963827 
-L 378.610464 295.488 
-L 381.923265 270.206977 
-L 385.236067 279.952659 
-L 388.548868 279.140341 
-L 391.86167 264.899311 
-L 395.174471 247.333 
-L 398.487273 223.661891 
+    <path clip-path="url(#pba2fb70039)" d="M 73.832727 218.816656 
+L 77.145529 199.70561 
+L 80.45833 184.623994 
+L 83.771132 199.539924 
+L 87.083933 211.938937 
+L 90.396735 232.931492 
+L 93.709536 256.976535 
+L 97.022338 280.624411 
+L 100.335139 286.129655 
+L 103.647941 295.488 
+L 106.960742 275.286208 
+L 110.273544 269.106576 
+L 113.586345 271.698681 
+L 116.899147 262.058069 
+L 120.211948 259.879418 
+L 123.52475 284.138023 
+L 126.837551 264.109873 
+L 130.150353 268.127052 
+L 133.463154 248.528463 
+L 136.775955 263.697364 
+L 140.088757 280.156794 
+L 143.401558 265.071348 
+L 146.71436 253.344563 
+L 150.027161 232.88796 
+L 153.339963 208.896172 
+L 156.652764 200.944187 
+L 159.965566 205.079046 
+L 163.278367 206.537841 
+L 166.591169 186.662046 
+L 169.90397 198.194463 
+L 173.216772 212.393968 
+L 176.529573 214.183814 
+L 179.842375 210.815494 
+L 183.155176 209.872922 
+L 186.467978 214.301922 
+L 189.780779 202.70842 
+L 193.093581 225.89852 
+L 196.406382 236.643101 
+L 199.719184 223.304861 
+L 203.031985 248.779749 
+L 206.344787 258.408574 
+L 209.657588 258.697176 
+L 212.97039 241.355655 
+L 216.283191 234.156412 
+L 219.595993 224.197772 
+L 222.908794 239.745778 
+L 226.221596 222.811571 
+L 229.534397 218.44896 
+L 232.847199 210.587811 
+L 236.16 185.261372 
+L 239.472801 190.30086 
+L 242.785603 169.206384 
+L 246.098404 151.133529 
+L 249.411206 138.128684 
+L 252.724007 118.103582 
+L 256.036809 135.931764 
+L 259.34961 144.992343 
+L 262.662412 165.332965 
+L 265.975213 182.237295 
+L 269.288015 177.315662 
+L 272.600816 174.594475 
+L 275.913618 150.996916 
+L 279.226419 141.033094 
+L 282.539221 133.235844 
+L 285.852022 147.429144 
+L 289.164824 159.58135 
+L 292.477625 165.255742 
+L 295.790427 187.805261 
+L 299.103228 168.437357 
+L 302.41603 179.209358 
+L 305.728831 164.289411 
+L 309.041633 162.812807 
+L 312.354434 143.155529 
+L 315.667236 117.525275 
+L 318.980037 134.856926 
+L 322.292839 130.484626 
+L 325.60564 106.009056 
+L 328.918442 121.351806 
+L 332.231243 129.485729 
+L 335.544045 128.040866 
+L 338.856846 149.503192 
+L 342.169647 152.523396 
+L 345.482449 135.912708 
+L 348.79525 110.47096 
+L 352.108052 122.608725 
+L 355.420853 145.195271 
+L 358.733655 130.805459 
+L 362.046456 124.227503 
+L 365.359258 126.167724 
+L 368.672059 132.827813 
+L 371.984861 107.11058 
+L 375.297662 81.329367 
+L 378.610464 100.707093 
+L 381.923265 126.191601 
+L 385.236067 104.521511 
+L 388.548868 107.970558 
+L 391.86167 83.674048 
+L 395.174471 70.107308 
+L 398.487273 53.568 
 " style="fill:none;stroke:#1f77b4;stroke-linecap:square;stroke-width:1.5;"/>
    </g>
    <g id="patch_3">
@@ -721,9 +721,9 @@ L 414.72 41.472
   </g>
  </g>
  <defs>
-  <clipPath id="p7ecdf2768d">
+  <clipPath id="pba2fb70039">
    <rect height="266.112" width="357.12" x="57.6" y="41.472"/>
   </clipPath>
  </defs>
 </svg>
-</p><hr /><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 00:29:10 IST 2019.</small></i></div></body></html>
+</p><hr /><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 01:00:55 IST 2019.</small></i></div></body></html>
