@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html><body style="background-color:#dddddd;"><head><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-clj.js" type="text/javascript"></script></head><div><h1>pycloj-tools.visual-test</h1><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Tue Dec 24 17:39:38 IST 2019.</small></i><hr /><div>Table of contents<ul><li><a href="#matplotlib">matplotlib</a></li></ul></div><hr /><p><p><div style="background-color:#f2f2f2; width: 100%"><div><code class="prettyprint lang-clj">(require&nbsp;(quote&nbsp;[pycloj-tools.visual</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:refer&nbsp;:all])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[pycloj-tools.pyutils</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;pyutils])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[libpython-clj.python</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;py]))</br></br></code></div></div></p></p><p><p><div style="background-color:#f2f2f2; width: 100%"><a id="matplotlib">~~~~matplotlib~~~~</a><div><code class="prettyprint lang-clj">(matplotlib->svg</br>&nbsp;&nbsp;(fn&nbsp;[]</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/plot</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(->>&nbsp;(repeatedly&nbsp;99&nbsp;rand)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(map&nbsp;(partial&nbsp;+&nbsp;-0.5))</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reductions&nbsp;+)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec))</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/ylabel&nbsp;"some&nbsp;numbers")))</br></br></code></div></div></p><?xml version="1.0" encoding="utf-8" standalone="no"?>
+<html><body style="background-color:#dddddd;"><head><script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js" type="text/javascript"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/lang-clj.js" type="text/javascript"></script></head><div><h1>pycloj-tools.visual-test</h1><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 00:29:10 IST 2019.</small></i><hr /><div>Table of contents<ul><li><a href="#matplotlib">matplotlib</a></li></ul></div><hr /><p><p><div style="background-color:#f2f2f2; width: 100%"><div><code class="prettyprint lang-clj">(require&nbsp;(quote&nbsp;[pycloj-tools.visual</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:refer&nbsp;:all])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[pycloj-tools.pyutils</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;pyutils])</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(quote&nbsp;[libpython-clj.python</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:as&nbsp;py]))</br></br></code></div></div></p></p><p><p><div style="background-color:#f2f2f2; width: 100%"><a id="matplotlib">~~~~matplotlib~~~~</a><div><code class="prettyprint lang-clj">(matplotlib->svg</br>&nbsp;&nbsp;(fn&nbsp;[]</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/plot</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(->>&nbsp;(repeatedly&nbsp;99&nbsp;rand)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(map&nbsp;(partial&nbsp;+&nbsp;-0.5))</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(reductions&nbsp;+)</br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;vec))</br>&nbsp;&nbsp;&nbsp;&nbsp;(plt/ylabel&nbsp;"some&nbsp;numbers")))</br></br></code></div></div></p><?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
   "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <!-- Created with matplotlib (https://matplotlib.org/) -->
@@ -33,10 +33,10 @@ z
       <defs>
        <path d="M 0 0 
 L 0 3.5 
-" id="m7b39a3b02a" style="stroke:#000000;stroke-width:0.8;"/>
+" id="mb4f478b5c9" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="73.832727" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="73.832727" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_1">
@@ -72,7 +72,7 @@ z
     <g id="xtick_2">
      <g id="line2d_2">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="140.088757" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="140.088757" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_2">
@@ -112,7 +112,7 @@ z
     <g id="xtick_3">
      <g id="line2d_3">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="206.344787" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="206.344787" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_3">
@@ -145,7 +145,7 @@ z
     <g id="xtick_4">
      <g id="line2d_4">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="272.600816" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="272.600816" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_4">
@@ -191,7 +191,7 @@ z
     <g id="xtick_5">
      <g id="line2d_5">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="338.856846" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="338.856846" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_5">
@@ -246,7 +246,7 @@ z
     <g id="xtick_6">
      <g id="line2d_6">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="405.112876" xlink:href="#m7b39a3b02a" y="307.584"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="405.112876" xlink:href="#mb4f478b5c9" y="307.584"/>
       </g>
      </g>
      <g id="text_6">
@@ -280,14 +280,14 @@ z
       <defs>
        <path d="M 0 0 
 L -3.5 0 
-" id="mea58a732f5" style="stroke:#000000;stroke-width:0.8;"/>
+" id="m984a3c4f0e" style="stroke:#000000;stroke-width:0.8;"/>
       </defs>
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="284.00276"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="293.183387"/>
       </g>
      </g>
      <g id="text_7">
-      <!-- −1.5 -->
+      <!-- −3 -->
       <defs>
        <path d="M 10.59375 35.5 
 L 73.1875 35.5 
@@ -295,153 +295,100 @@ L 73.1875 27.203125
 L 10.59375 27.203125 
 z
 " id="DejaVuSans-8722"/>
-       <path d="M 10.6875 12.40625 
-L 21 12.40625 
-L 21 0 
-L 10.6875 0 
+       <path d="M 40.578125 39.3125 
+Q 47.65625 37.796875 51.625 33 
+Q 55.609375 28.21875 55.609375 21.1875 
+Q 55.609375 10.40625 48.1875 4.484375 
+Q 40.765625 -1.421875 27.09375 -1.421875 
+Q 22.515625 -1.421875 17.65625 -0.515625 
+Q 12.796875 0.390625 7.625 2.203125 
+L 7.625 11.71875 
+Q 11.71875 9.328125 16.59375 8.109375 
+Q 21.484375 6.890625 26.8125 6.890625 
+Q 36.078125 6.890625 40.9375 10.546875 
+Q 45.796875 14.203125 45.796875 21.1875 
+Q 45.796875 27.640625 41.28125 31.265625 
+Q 36.765625 34.90625 28.71875 34.90625 
+L 20.21875 34.90625 
+L 20.21875 43.015625 
+L 29.109375 43.015625 
+Q 36.375 43.015625 40.234375 45.921875 
+Q 44.09375 48.828125 44.09375 54.296875 
+Q 44.09375 59.90625 40.109375 62.90625 
+Q 36.140625 65.921875 28.71875 65.921875 
+Q 24.65625 65.921875 20.015625 65.03125 
+Q 15.375 64.15625 9.8125 62.3125 
+L 9.8125 71.09375 
+Q 15.4375 72.65625 20.34375 73.4375 
+Q 25.25 74.21875 29.59375 74.21875 
+Q 40.828125 74.21875 47.359375 69.109375 
+Q 53.90625 64.015625 53.90625 55.328125 
+Q 53.90625 49.265625 50.4375 45.09375 
+Q 46.96875 40.921875 40.578125 39.3125 
 z
-" id="DejaVuSans-46"/>
-       <path d="M 10.796875 72.90625 
-L 49.515625 72.90625 
-L 49.515625 64.59375 
-L 19.828125 64.59375 
-L 19.828125 46.734375 
-Q 21.96875 47.46875 24.109375 47.828125 
-Q 26.265625 48.1875 28.421875 48.1875 
-Q 40.625 48.1875 47.75 41.5 
-Q 54.890625 34.8125 54.890625 23.390625 
-Q 54.890625 11.625 47.5625 5.09375 
-Q 40.234375 -1.421875 26.90625 -1.421875 
-Q 22.3125 -1.421875 17.546875 -0.640625 
-Q 12.796875 0.140625 7.71875 1.703125 
-L 7.71875 11.625 
-Q 12.109375 9.234375 16.796875 8.0625 
-Q 21.484375 6.890625 26.703125 6.890625 
-Q 35.15625 6.890625 40.078125 11.328125 
-Q 45.015625 15.765625 45.015625 23.390625 
-Q 45.015625 31 40.078125 35.4375 
-Q 35.15625 39.890625 26.703125 39.890625 
-Q 22.75 39.890625 18.8125 39.015625 
-Q 14.890625 38.140625 10.796875 36.28125 
-z
-" id="DejaVuSans-53"/>
+" id="DejaVuSans-51"/>
       </defs>
-      <g transform="translate(26.317187 287.801979)scale(0.1 -0.1)">
+      <g transform="translate(35.857813 296.982606)scale(0.1 -0.1)">
        <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-49"/>
-       <use x="147.412109" xlink:href="#DejaVuSans-46"/>
-       <use x="179.199219" xlink:href="#DejaVuSans-53"/>
+       <use x="83.789062" xlink:href="#DejaVuSans-51"/>
       </g>
      </g>
     </g>
     <g id="ytick_2">
      <g id="line2d_8">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="252.874488"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="239.94467"/>
       </g>
      </g>
      <g id="text_8">
-      <!-- −1.0 -->
-      <g transform="translate(26.317187 256.673707)scale(0.1 -0.1)">
+      <!-- −2 -->
+      <g transform="translate(35.857813 243.743889)scale(0.1 -0.1)">
        <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-49"/>
-       <use x="147.412109" xlink:href="#DejaVuSans-46"/>
-       <use x="179.199219" xlink:href="#DejaVuSans-48"/>
+       <use x="83.789062" xlink:href="#DejaVuSans-50"/>
       </g>
      </g>
     </g>
     <g id="ytick_3">
      <g id="line2d_9">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="221.746216"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="186.705954"/>
       </g>
      </g>
      <g id="text_9">
-      <!-- −0.5 -->
-      <g transform="translate(26.317187 225.545435)scale(0.1 -0.1)">
+      <!-- −1 -->
+      <g transform="translate(35.857813 190.505172)scale(0.1 -0.1)">
        <use xlink:href="#DejaVuSans-8722"/>
-       <use x="83.789062" xlink:href="#DejaVuSans-48"/>
-       <use x="147.412109" xlink:href="#DejaVuSans-46"/>
-       <use x="179.199219" xlink:href="#DejaVuSans-53"/>
+       <use x="83.789062" xlink:href="#DejaVuSans-49"/>
       </g>
      </g>
     </g>
     <g id="ytick_4">
      <g id="line2d_10">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="190.617944"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="133.467237"/>
       </g>
      </g>
      <g id="text_10">
-      <!-- 0.0 -->
-      <g transform="translate(34.696875 194.417163)scale(0.1 -0.1)">
+      <!-- 0 -->
+      <g transform="translate(44.2375 137.266456)scale(0.1 -0.1)">
        <use xlink:href="#DejaVuSans-48"/>
-       <use x="63.623047" xlink:href="#DejaVuSans-46"/>
-       <use x="95.410156" xlink:href="#DejaVuSans-48"/>
       </g>
      </g>
     </g>
     <g id="ytick_5">
      <g id="line2d_11">
       <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="159.489673"/>
+       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#m984a3c4f0e" y="80.22852"/>
       </g>
      </g>
      <g id="text_11">
-      <!-- 0.5 -->
-      <g transform="translate(34.696875 163.288891)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-48"/>
-       <use x="63.623047" xlink:href="#DejaVuSans-46"/>
-       <use x="95.410156" xlink:href="#DejaVuSans-53"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_6">
-     <g id="line2d_12">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="128.361401"/>
-      </g>
-     </g>
-     <g id="text_12">
-      <!-- 1.0 -->
-      <g transform="translate(34.696875 132.160619)scale(0.1 -0.1)">
+      <!-- 1 -->
+      <g transform="translate(44.2375 84.027739)scale(0.1 -0.1)">
        <use xlink:href="#DejaVuSans-49"/>
-       <use x="63.623047" xlink:href="#DejaVuSans-46"/>
-       <use x="95.410156" xlink:href="#DejaVuSans-48"/>
       </g>
      </g>
     </g>
-    <g id="ytick_7">
-     <g id="line2d_13">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="97.233129"/>
-      </g>
-     </g>
-     <g id="text_13">
-      <!-- 1.5 -->
-      <g transform="translate(34.696875 101.032347)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-49"/>
-       <use x="63.623047" xlink:href="#DejaVuSans-46"/>
-       <use x="95.410156" xlink:href="#DejaVuSans-53"/>
-      </g>
-     </g>
-    </g>
-    <g id="ytick_8">
-     <g id="line2d_14">
-      <g>
-       <use style="stroke:#000000;stroke-width:0.8;" x="57.6" xlink:href="#mea58a732f5" y="66.104857"/>
-      </g>
-     </g>
-     <g id="text_14">
-      <!-- 2.0 -->
-      <g transform="translate(34.696875 69.904076)scale(0.1 -0.1)">
-       <use xlink:href="#DejaVuSans-50"/>
-       <use x="63.623047" xlink:href="#DejaVuSans-46"/>
-       <use x="95.410156" xlink:href="#DejaVuSans-48"/>
-      </g>
-     </g>
-    </g>
-    <g id="text_15">
+    <g id="text_12">
      <!-- some numbers -->
      <defs>
       <path d="M 44.28125 53.078125 
@@ -633,7 +580,7 @@ Q 39.703125 55.765625 41.0625 55.515625
 z
 " id="DejaVuSans-114"/>
      </defs>
-     <g transform="translate(20.2375 211.84675)rotate(-90)scale(0.1 -0.1)">
+     <g transform="translate(29.778125 211.84675)rotate(-90)scale(0.1 -0.1)">
       <use xlink:href="#DejaVuSans-115"/>
       <use x="52.099609" xlink:href="#DejaVuSans-111"/>
       <use x="113.28125" xlink:href="#DejaVuSans-109"/>
@@ -649,106 +596,106 @@ z
      </g>
     </g>
    </g>
-   <g id="line2d_15">
-    <path clip-path="url(#p1b99cb5387)" d="M 73.832727 217.055586 
-L 77.145529 202.351108 
-L 80.45833 223.024385 
-L 83.771132 202.790589 
-L 87.083933 222.035024 
-L 90.396735 216.860992 
-L 93.709536 243.465257 
-L 97.022338 224.16113 
-L 100.335139 236.11956 
-L 103.647941 228.121513 
-L 106.960742 252.334144 
-L 110.273544 244.575705 
-L 113.586345 218.584693 
-L 116.899147 246.569749 
-L 120.211948 234.944754 
-L 123.52475 262.153794 
-L 126.837551 269.637386 
-L 130.150353 242.165906 
-L 133.463154 260.729296 
-L 136.775955 248.774014 
-L 140.088757 270.750554 
-L 143.401558 245.01911 
-L 146.71436 218.769392 
-L 150.027161 230.461166 
-L 153.339963 259.589839 
-L 156.652764 244.038281 
-L 159.965566 260.608817 
-L 163.278367 285.719235 
-L 166.591169 293.356656 
-L 169.90397 273.252715 
-L 173.216772 295.488 
-L 176.529573 264.361004 
-L 179.842375 288.488202 
-L 183.155176 259.659817 
-L 186.467978 232.887352 
-L 189.780779 260.160075 
-L 193.093581 229.742853 
-L 196.406382 209.485444 
-L 199.719184 199.67455 
-L 203.031985 219.87655 
-L 206.344787 206.080452 
-L 209.657588 201.641169 
-L 212.97039 195.584417 
-L 216.283191 180.865792 
-L 219.595993 187.875103 
-L 222.908794 165.54313 
-L 226.221596 151.53641 
-L 229.534397 161.097353 
-L 232.847199 181.473279 
-L 236.16 167.892776 
-L 239.472801 190.469626 
-L 242.785603 196.457642 
-L 246.098404 196.171335 
-L 249.411206 172.441 
-L 252.724007 164.993785 
-L 256.036809 134.992025 
-L 259.34961 125.200836 
-L 262.662412 123.779404 
-L 265.975213 116.235789 
-L 269.288015 93.205623 
-L 272.600816 114.029613 
-L 275.913618 133.850191 
-L 279.226419 128.824297 
-L 282.539221 158.046283 
-L 285.852022 141.706462 
-L 289.164824 121.236894 
-L 292.477625 97.368876 
-L 295.790427 127.563374 
-L 299.103228 152.279224 
-L 302.41603 141.536356 
-L 305.728831 127.28427 
-L 309.041633 154.239782 
-L 312.354434 170.775122 
-L 315.667236 182.985933 
-L 318.980037 161.549614 
-L 322.292839 146.0017 
-L 325.60564 137.773468 
-L 328.918442 155.419313 
-L 332.231243 168.954198 
-L 335.544045 142.238666 
-L 338.856846 134.028446 
-L 342.169647 129.778174 
-L 345.482449 128.76257 
-L 348.79525 106.153412 
-L 352.108052 121.304449 
-L 355.420853 134.551353 
-L 358.733655 124.844595 
-L 362.046456 96.143532 
-L 365.359258 79.644731 
-L 368.672059 93.588615 
-L 371.984861 68.598325 
-L 375.297662 68.556689 
-L 378.610464 54.500132 
-L 381.923265 53.568 
-L 385.236067 67.851663 
-L 388.548868 85.061473 
-L 391.86167 112.23948 
-L 395.174471 123.102242 
-L 398.487273 139.439336 
+   <g id="line2d_12">
+    <path clip-path="url(#p7ecdf2768d)" d="M 73.832727 141.701579 
+L 77.145529 138.776437 
+L 80.45833 123.04708 
+L 83.771132 108.031497 
+L 87.083933 81.51871 
+L 90.396735 77.686613 
+L 93.709536 71.248451 
+L 97.022338 82.361059 
+L 100.335139 75.701607 
+L 103.647941 70.961006 
+L 106.960742 79.453693 
+L 110.273544 68.874606 
+L 113.586345 53.568 
+L 116.899147 68.326199 
+L 120.211948 83.32857 
+L 123.52475 84.206151 
+L 126.837551 95.65012 
+L 130.150353 117.444801 
+L 133.463154 112.117988 
+L 136.775955 93.040245 
+L 140.088757 77.902771 
+L 143.401558 85.877239 
+L 146.71436 102.36178 
+L 150.027161 90.30339 
+L 153.339963 115.713476 
+L 156.652764 95.722373 
+L 159.965566 95.4403 
+L 163.278367 121.19052 
+L 166.591169 125.547819 
+L 169.90397 118.414317 
+L 173.216772 100.951585 
+L 176.529573 119.916775 
+L 179.842375 136.218696 
+L 183.155176 133.350887 
+L 186.467978 134.849376 
+L 189.780779 139.869601 
+L 193.093581 163.281184 
+L 196.406382 147.349934 
+L 199.719184 131.610014 
+L 203.031985 128.16531 
+L 206.344787 150.013512 
+L 209.657588 128.287408 
+L 212.97039 143.785131 
+L 216.283191 130.465539 
+L 219.595993 121.832344 
+L 222.908794 111.732729 
+L 226.221596 119.442452 
+L 229.534397 142.265712 
+L 232.847199 154.507345 
+L 236.16 174.353003 
+L 239.472801 160.073332 
+L 242.785603 185.959405 
+L 246.098404 184.782839 
+L 249.411206 169.575998 
+L 252.724007 166.491087 
+L 256.036809 151.80558 
+L 259.34961 130.031498 
+L 262.662412 136.066266 
+L 265.975213 157.211193 
+L 269.288015 173.832157 
+L 272.600816 159.927222 
+L 275.913618 171.65962 
+L 279.226419 182.317682 
+L 282.539221 168.740574 
+L 285.852022 176.235122 
+L 289.164824 175.65788 
+L 292.477625 167.419449 
+L 295.790427 158.571649 
+L 299.103228 167.014812 
+L 302.41603 189.714223 
+L 305.728831 195.891395 
+L 309.041633 205.661431 
+L 312.354434 211.29877 
+L 315.667236 200.226595 
+L 318.980037 187.375165 
+L 322.292839 213.480733 
+L 325.60564 202.431632 
+L 328.918442 212.522549 
+L 332.231243 186.654292 
+L 335.544045 212.02592 
+L 338.856846 194.316074 
+L 342.169647 188.236956 
+L 345.482449 174.385636 
+L 348.79525 193.036821 
+L 352.108052 199.170322 
+L 355.420853 209.654796 
+L 358.733655 227.496299 
+L 362.046456 245.961295 
+L 365.359258 245.678537 
+L 368.672059 265.049892 
+L 371.984861 266.074133 
+L 375.297662 274.963827 
+L 378.610464 295.488 
+L 381.923265 270.206977 
+L 385.236067 279.952659 
+L 388.548868 279.140341 
+L 391.86167 264.899311 
+L 395.174471 247.333 
+L 398.487273 223.661891 
 " style="fill:none;stroke:#1f77b4;stroke-linecap:square;stroke-width:1.5;"/>
    </g>
    <g id="patch_3">
@@ -774,9 +721,9 @@ L 414.72 41.472
   </g>
  </g>
  <defs>
-  <clipPath id="p1b99cb5387">
+  <clipPath id="p7ecdf2768d">
    <rect height="266.112" width="357.12" x="57.6" y="41.472"/>
   </clipPath>
  </defs>
 </svg>
-</p><hr /><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Tue Dec 24 17:39:38 IST 2019.</small></i></div></body></html>
+</p><hr /><i><small><a href="https://github.com/pycloj/pycloj-tools/tree/master/test/pycloj_tools/visual_test.clj">pycloj-tools.visual-test</a> - created by <a href="https://github.com/scicloj/notespace">notespace</a>, Wed Dec 25 00:29:10 IST 2019.</small></i></div></body></html>

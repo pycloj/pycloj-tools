@@ -95,7 +95,13 @@
                                                   (py/get-attr arg)
                                                   empty->nil)]))
                                    (into {}))
-                              (update :kind (comp keyword python/str)))))))]
+                              (update :kind
+                                      (comp keyword python/str))
+                              (update :annotation
+                                      (fn [a]
+                                        (some-> a
+                                                (py/get-attr "__name__")
+                                                keyword))))))))]
     {:name              (py/get-attr f "__name__")
      :args              args
      :return-annotation (-> sig

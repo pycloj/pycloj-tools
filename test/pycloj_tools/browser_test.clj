@@ -1,13 +1,15 @@
 (ns pycloj-tools.browser-test
   (:require [notespace.v0.note :refer [note note-void note-md note-as-md note-hiccup note-as-hiccup note-test render-this-ns!]]
-            [clojure.string :as string]))
+            [clojure.string :as string]
+            [libpython-clj.python :as py]))
 
 (note-void
  (require '[pycloj-tools.browser :refer :all]
           '[pycloj-tools.pyutils :as pyutils]
           '[libpython-clj.python :as py]
           '[clojure.java.shell :refer [sh]]
-          '[clojure.string :as string]))
+          '[clojure.string :as string]
+          '[com.rpl.specter :refer [transform ALL MAP-VALS]]))
 
 (note-md
  "The `pycloj-tools.browser` namespace offers a collection of functions for inspecting python modules.
@@ -92,7 +94,68 @@ We will test it with realistic python packages such as `pandas`, as well as with
     "dummy_package.module_a.submodule_aa.submodule_aaa"]]])
 
 
+(note-test
+ :functions-map-test
+ [[=
+   (->> "dummy_package.module_a.submodule_aa"
+        name->module
+        module->functions-map
+        keys
+        set)
+   #{:f}]
+  [=
+   (->> "dummy_package"
+        name->module
+        module->functions-map
+        keys
+        set)
+   #{:for_iter
+     :calling_custom_clojure_fn
+     :complex_fn}]])
 
+
+(note-test
+ :function-info-test
+ [[=
+   (->> "dummy_package"
+        name->module
+        module->functions-map
+        :complex_fn
+        function->info)
+   '{:name              "complex_fn",
+     :args
+     [{:name       "a",
+       :empty      nil,
+       :kind       :POSITIONAL_OR_KEYWORD,
+       :default    nil,
+       :annotation nil}
+      {:name       "b",
+       :empty      nil,
+       :kind       :POSITIONAL_OR_KEYWORD,
+       :default    nil,
+       :annotation nil}
+      {:name       "c",
+       :empty      nil,
+       :kind       :POSITIONAL_OR_KEYWORD,
+       :default    5,
+       :annotation :str}
+      {:name       "args",
+       :empty      nil,
+       :kind       :VAR_POSITIONAL,
+       :default    nil,
+       :annotation nil}
+      {:name "d", :empty nil, :kind :KEYWORD_ONLY, :default 10, :annotation nil}
+      {:name       "kwargs",
+       :empty      nil,
+       :kind       :VAR_KEYWORD,
+       :default    nil,
+       :annotation nil}],
+     :return-annotation nil,
+     :doc               nil,
+     :generator?        false,
+     :async?            false,
+     :awaitable?        false,
+     :builtin?          false}]])
 
 
 (render-this-ns!)

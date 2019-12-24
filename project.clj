@@ -5,5 +5,6 @@
             :url "https://www.eclipse.org/legal/epl-2.0/"}
   :dependencies [[org.clojure/clojure "1.10.0"]
                  [cnuernber/libpython-clj "1.29"]
-                 [scicloj/notespace "0.1.0-SNAPSHOT"]]
+                 [scicloj/notespace "0.1.0-SNAPSHOT"]
+                 [com.rpl/specter "1.1.3"]]
   :repl-options {:init-ns pycloj-tools.core})
