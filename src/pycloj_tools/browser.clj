@@ -2,7 +2,8 @@
   (:require [libpython-clj.python :as py]
             [libpython-clj.require :refer [require-python]]
             [clojure.string :as string]
-            [pycloj-tools.pyutils :as pyutils]))
+            [pycloj-tools.pyutils :as pyutils]
+            [pycloj-tools.utils :as utils :refer [fmap]]))
 
 (require-python '([builtins :as python]
                   argparse
@@ -46,6 +47,11 @@
        module->submodules-names
        (map name->module)))
 
+(defn module->submodules-map [module]
+  (->> module
+       module->submodules-names
+       (map (juxt keyword name->module))
+       (into {})))
 
 (defn module->recursive-submodules [module]
   (->> module
@@ -118,4 +124,26 @@
 
 
 
-
+(defn ->recursive-info [object]
+  (cond (inspect/isfunction object)
+        [:function
+         (function->info object)]
+        (inspect/isclass object)
+        [:class
+         {:methods (->> object
+                        ->functions-map
+                        (fmap ->recursive-info))}]
+        (inspect/ismodule object)
+        [:module
+         {:classes (->> object
+                        ->classes-map
+                        (fmap ->recursive-info))
+          :functions (->> object
+                          ->functions-map
+                          (fmap ->recursive-info))
+          :submodules (->> object
+                           module->submodules-map
+                           (fmap ->recursive-info))}]
+        :else
+        [:other
+         object]))

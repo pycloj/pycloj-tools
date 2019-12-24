@@ -1,4 +1,5 @@
-(ns pycloj-tools.utils)
+(ns pycloj-tools.utils
+  (:require [com.rpl.specter :refer [transform MAP-VALS]]))
 
 (defmacro def+
   "binding => binding-form
@@ -11,3 +12,5 @@
                (map (fn [[var value]] `(def ~var ~value)) bings)
                [(mapv (fn [[var _]] (str var)) bings)]])))
 
+(defn fmap [f m]
+  (transform [MAP-VALS] f m))
