@@ -122,7 +122,7 @@ We will test it with realistic python packages such as `pandas`, as well as with
         module->functions-map
         :complex_fn
         function->info)
-   '{:name              "complex_fn",
+   {:name              "complex_fn",
      :args
      [{:name       "a",
        :empty      nil,
