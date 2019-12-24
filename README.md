@@ -2,9 +2,9 @@
 
 A toolset for using [libpython-clj](https://github.com/cnuernber/libpython-clj).
 
-[pycloj-tools.browser](./resources/public/pycloj-tools/browser/index.html)
-[pycloj-tools.pyutils](./resources/public/pycloj-tools/pyutils/index.html)
-[pycloj-tools.visual](./resources/public/pycloj-tools/visual/index.html)
+* [pycloj-tools.browser](./resources/public/pycloj-tools/browser-test/index.html)
+* [pycloj-tools.pyutils](./resources/public/pycloj-tools/pyutils-test/index.html)
+* [pycloj-tools.visual](./resources/public/pycloj-tools/visual-test/index.html)
 
 ## License
 
